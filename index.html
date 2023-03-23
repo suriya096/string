@@ -1,0 +1,183 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>string method</title>
+   <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-secondary">
+<div class="text-center mt-5">
+    <h1>javascript string</h1>
+  </div>
+   <div class="container mt-5">
+    <div class="row justify-content-center">
+    <div class="col-md-8 bg-info text-center">
+        
+   <h3 class="text-center">string length</h3>
+  <div class="count mt-2">
+    <input type="text" name="string length" id="text" class="form-control text-center"placeholder="To find the string length">
+    <p id="demo1"  class="text-dark bg-secondary mt-2" ></p>
+    <button  class="mb-2" onclick="length()">find length</button>
+  </div>
+</div>
+
+
+
+
+  
+<div class="col-md-8 bg-info text-center mt-5">
+        
+    <h3 class="text-center">string slice</h3>
+   <div class="slice mt-2">
+     <input type="text" name="string length" id="textslice" class="form-control text-center">
+
+     <label for="starting letter">starting letter </label>
+
+     <input type="number"  id="first-slice"placeholder="first slice">
+
+     <label for="ending letter" class="mt-5">ending letter </label>
+
+     <input type="number" id="end-slice" placeholder="end slice" >
+     <p id="demo2"  class="text-dark bg-secondary mt-2" ></p>
+     <button  class="mb-2" onclick="slice()">slice</button>
+   </div>
+ </div>
+
+  
+ <div class="col-md-8 bg-info text-center mt-5">
+        
+  <h3 class="text-center">string substr</h3>
+ <div class="slice mt-2">
+   <input type="text" name="str slice" id="textstr" class="form-control text-center">
+
+   <label for="starting letter">starting letter </label>
+
+   <input type="number"  id="Firstslc"placeholder="first slice">
+
+   <label for="ending letter" class="mt-5">ending letter </label>
+
+   <input type="number" id="Endslc" placeholder="end slice" >
+   <p id="demo3"  class="text-dark bg-secondary mt-2" ></p>
+   <button  class="mb-2" onclick="str()">slice</button>
+ </div>
+</div>
+
+
+
+  
+<div class="col-md-8 bg-info text-center mt-5">
+        
+       <h3 class="text-center">string replace content</h3>
+   <div class="slice mt-2">
+    <input type="text" name="string replace" id="replace" class="form-control text-center">  
+    
+    <label class="mt-5" for="replacing words">current word</label>
+
+    <input type="text"  id="firstword"placeholder="current word">
+     
+    <label for="replacing" class="mt-5"> replace</label>
+
+    <input type="text"  id="secondword"placeholder="replace word">
+
+    <p id="demo4"  class="text-dark bg-secondary mt-2" ></p>
+    <button  class="mb-2" onclick="replaceme()">replace</button>
+
+  </div>
+</div>
+
+<div class="col-md-8 bg-info text-center mt-5">
+        
+  <h3 class="text-center">string replace all content</h3>
+<div class="slice mt-2">
+<input type="text" name="string replace all" id="replace-all" class="form-control text-center">  
+
+<label class="mt-5" for="replacing words">current word</label>
+
+<input type="text"  id="first-para"placeholder="current word">
+
+<label for="replacing" class="mt-5"> replace</label>
+
+<input type="text"  id="second-para"placeholder="replace word">
+
+<p id="demo5"  class="text-dark bg-secondary mt-2" ></p>
+<button  class="mb-2" onclick="replaceall()">replace</button>
+
+</div>
+</div>
+
+
+<div class="col-md-8 bg-info text-center mt-5">
+        
+  <h3 class="text-center">string upper case</h3>
+<div class="slice mt-2">
+  <input type="text" name="string transform" id="textcase" class="form-control text-center"> 
+<div class="mt-5">
+  <p id="demo6"  class="text-dark bg-secondary mt-2" ></p>
+  <button  class="mb-2" onclick="textupper()">textupper</button>
+  <p id="demo7"  class="text-dark bg-secondary mt-2" ></p>
+  <button  class="mb-2" onclick="textlower()">textlower</button>
+</div>
+</div>
+</div>
+
+
+<div class="col-md-8 bg-info text-center mt-5">
+        
+  <h3 class="text-center">string concat</h3>
+<div class="slice mt-2">
+  
+
+<label class="mt-5" for="replacing words">first word</label>
+
+<input type="text"  id="first concat"placeholder="current word">
+
+<label for="replacing" class="mt-5">second word</label>
+
+<input type="text"  id="second concat"placeholder="replace word">
+
+<p id="demo8"  class="text-dark bg-secondary mt-2" ></p>
+<button  class="mb-2" onclick="concatword()">concat</button>
+
+</div>
+</div>
+
+
+<div class="col-md-8 bg-info text-center mt-5">
+        
+  <h3 class="text-center">string  trim</h3>
+<div class="slice mt-2">
+<input type="text" name="string replace all" id="trim" class="form-control text-center">  
+<p id="demo9"  class="text-dark bg-secondary mt-2" ></p>
+<p id="demo10"  class="text-dark bg-secondary mt-2" ></p>
+<p id="demo11"  class="text-dark bg-secondary mt-2" ></p>
+<button  class="mb-2" onclick="trimword()">trim</button>
+<button onclick="trimstart()">trimstart</button>
+<button onclick="trimend()">trimend</button>
+</div>
+</div>
+
+<div class="col-md-8 bg-info text-center mt-5">
+        
+  <h3 class="text-center">padding start</h3>
+<div class="slice mt-2">
+<input type="text" name="string replace all" id="paddingstart" class="form-control text-center">  
+<input type="number"  id="padword"placeholder="position">
+<input type="text"  id="padtext"placeholder="text">
+
+<p id="demo12"  class="text-dark bg-secondary mt-2" ></p>
+
+<button  class="mb-2" onclick="paddingstart()">padding start</button>
+
+<button  class="mb-2" onclick="paddingend()">padding end</button>
+</div>
+</div>
+
+</div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+ <script src="script.js"></script>
+    
+</body>
+</html>
